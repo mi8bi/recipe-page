@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Young Serif";
+    src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("./assets/fonts/outfit/static/Outfit-Regular.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(330, 100%, 98%);
+}
+
+section {
+    padding: 40px;
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+section > img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.title-container {
+    margin-top: 24px;
+}
+
+.title {
+    font-family: "Young Serif";
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.desc {
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+    margin-top: 16px;
+}
+
+.preparation-time {
+    padding: 32px;
+    background-color: hsl(330, 100%, 98%);
+    margin-top: 32px;
+    border-radius: 8px;
+}
+
+.preparation-time > h3 {
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(332, 51%, 32%); 
+    font-size: 24px;
+}
+
+.preparation-time ul {
+    margin-top: 24px;
+}
+
+.preparation-time li {
+    margin-left: 24px;
+    margin-top: 16px;
+    padding-left: 24px;
+}
+
+.preparation-time span {
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ingredients-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.ingredients {
+    font-family: "Young Serif";
+    font-size: 24px;
+    font-weight: 400;
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients-container ul {
+    margin-top: 24px;
+}
+
+.ingredients-container li {
+    margin-left: 24px;
+    margin-top: 16px;
+    padding-left: 16px;
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+section hr:nth-child(1) {
+    border: none;
+    height: 2px;
+    background-color: hsl(24, 5%, 18%);
+}
+
