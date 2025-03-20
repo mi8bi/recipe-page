@@ -90,7 +90,8 @@ section > img {
     padding-left: 24px;
 }
 
-.preparation-time span {
+.preparation-time span,
+.instructions-container span{
     font-family: "Outfit";
     font-size: 16px;
     font-weight: 700;
@@ -101,18 +102,23 @@ section > img {
     margin-bottom: 32px;
 }
 
-.ingredients {
+.ingredients,
+.instructions-container > h3,
+.nutrition-container > h3{
     font-family: "Young Serif";
     font-size: 24px;
     font-weight: 400;
     color: hsl(332, 51%, 32%);
 }
 
-.ingredients-container ul {
+.ingredients-container ul,
+.instructions-container ol,
+.nutrition-container{
     margin-top: 24px;
 }
 
-.ingredients-container li {
+.ingredients-container li,
+.instructions-container li{
     margin-left: 24px;
     margin-top: 16px;
     padding-left: 16px;
@@ -122,9 +128,78 @@ section > img {
     color: hsl(30, 10%, 34%);
 }
 
-section hr:nth-child(1) {
+section hr {
     border: none;
     height: 2px;
-    background-color: hsl(24, 5%, 18%);
+    background-color: rgb(228, 228, 228);
 }
 
+.instructions-container {
+    margin-top: 32px;
+    margin-bottom: 32px;  
+}
+
+ul li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.nutrition-container > p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+td {
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.value {
+    font-weight: bold;
+    color: #7b4a36;
+}
+
+@media screen and (max-width: 720px) {
+
+    main {
+        background-color: #fff;
+    }
+
+    section {
+        padding: 0px;
+        width: 100%;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0px;
+        overflow: auto;
+    }
+    
+    section > img {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .title-container,
+    .preparation-time,
+    .ingredients-container,
+    .instructions-container,
+    .nutrition-container {
+        margin: 32px;
+    }
+}
