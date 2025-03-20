@@ -34,7 +34,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/recipe-page-eeNAm4l0ZC)
 - Live Site URL: [Add live site URL here](https://recipe-page-rho-pink.vercel.app/)
 
 ## My process
